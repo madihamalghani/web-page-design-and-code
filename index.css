@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+.toolbar button, .toolbar select {
+    background-color: #555;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.toolbar button:hover {
+    background-color: #777;
+}
+
+.canvas {
+    flex-grow: 1;
+    margin: 20px;
+    border: 1px solid #ccc;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.element {
+    position: absolute;
+    border: 1px dashed #000;
+    padding: 10px;
+    cursor: move;
+    user-select: none;
+}
+
+#output {
+    width: 100%;
+    height: 100px;
+    margin: 10px;
+    font-family: monospace;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+}
